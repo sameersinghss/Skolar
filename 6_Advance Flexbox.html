@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main container */
+        .main-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows flex items to wrap to the next line */
+            width: 90%;
+            max-width: 1200px;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Flex items inside main container */
+        .flex-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 8px;
+            flex: 1 1 200px; /* Flex-grow: 1, flex-shrink: 1, flex-basis: 200px */
+        }
+
+        /* Specific order applied */
+        .item-1 {
+            order: 2; /* This will display second */
+            background-color: #07bffc;
+        }
+
+        .item-2 {
+            order: 1; /* This will display first */
+            background-color: #b821f3;
+        }
+
+        .item-3 {
+            order: 3; /* This will display third */
+            background-color: #c34a8d;
+        }
+
+        /* Nested flex container */
+        .nested-container {
+            display: flex;
+            flex-direction: column;
+            align-content: stretch; /* Aligns items to fill the available space */
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+
+        /* Nested flex items */
+        .nested-item {
+            background-color: #ff5100;
+            color: white;
+            padding: 15px;
+            margin: 5px 0;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        /* Flex-wrap example */
+        .flex-item.wrap-item {
+            background-color: #27b09e;
+            flex: 1 1 100%; /* This item will stretch across the full width on smaller screens */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Flex items in the main container with different order values -->
+        <div class="flex-item item-1">Item 1 (Order 2)</div>
+        <div class="flex-item item-2">Item 2 (Order 1)</div>
+        <div class="flex-item item-3">Item 3 (Order 3)</div>
+
+        <!-- Flex-wrap example -->
+        <div class="flex-item wrap-item">Item 4 (Flex-wrap: full width on smaller screens)</div>
+
+        <!-- Nested flex container -->
+        <div class="flex-item nested-container">
+            <div class="nested-item">Nested Item 1</div>
+            <div class="nested-item">Nested Item 2</div>
+            <div class="nested-item">Nested Item 3</div>
+        </div>
+    </div>
+
+</body>
+</html>

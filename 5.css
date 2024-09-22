@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ /* Flexbox container */
+.flex-container {
+     display: flex;
+     justify-content: space-between; /* Distribute space evenly */
+     align-items: center; /* Center items vertically */
+     flex-direction: row; /* Arrange items in a row */
+     background-color: #fff;
+     padding: 20px;
+     border: 2px solid #ddd;
+     width: 80%;
+     max-width: 1200px;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Flex items */
+.flex-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1; /* Let each item grow to fit available space */
+    margin: 0 10px;
+}
+
+/* Make the first and last items stand out a bit */
+.flex-item:first-child {
+    background-color: #ff5722;
+}
+
+.flex-item:last-child {
+    background-color: #2196F3;
+}

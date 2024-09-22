@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: rgb(240, 13, 138);
+
+}
+h1 {
+    color: aqua;
+    margin: 5px;
+    padding: 5px;
+}
+.color-section {
+    color: rgb(246, 243, 243);
+    margin: 5px;
+    padding: 5px;
+    background-color: #3498db;
+}
+.linear-gradient-section {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    background-color: blue;
+}
+.radial-gradient-section {
+    color: rgb(10, 10, 10);
+    margin: 5px;
+    padding: 5px;
+    background-color: aquamarine;
+}
+.background-image-repeat {
+    background-color: blueviolet;
+    color: rgb(246, 255, 0);
+    margin: 5px;
+    padding: 5px;
+    background-image: url("https://google.com");
+    background-repeat: repeat;
+}

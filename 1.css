@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+h1 {
+    color: aqua;
+    margin: 10px;
+    padding: 10px;
+}
+
+#main-heading {
+    background-color: brown;
+    color: aliceblue;
+    margin: 5px;
+    padding: 5px;
+}
+
+.highlight {
+    background-color: blueviolet;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+a:hover {
+    color: rgb(43, 255, 0);
+
+}
+
+p{
+    background-color: #ffffff;
+    color: red;
+}

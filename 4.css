@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #34db3c;
+    margin: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.highlight {
+    color: #e73ccd;
+}
